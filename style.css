@@ -21,7 +21,6 @@ body {
   
   .header { 
     grid-area: header; 
-    border: red solid 3px;
 }
   .main { 
     justify-content: center;
@@ -29,11 +28,9 @@ body {
     flex-direction: column;
     align-items: center;
     grid-area: main; 
-    border: lime solid 3px;
 }
   .footer { 
     grid-area: footer; 
-    border: red solid 3px;
 }
 
 .time {
