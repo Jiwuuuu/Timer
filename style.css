@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,700,600,500,400,200|Inter:400");
+
+body {
+    margin: 0;
+    background: #0E1111;
+}
+
+
+.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      "header" 0px
+      "main" 1080px
+      "footer" 0px
+      / 1920px;
+    gap: 0px;
+  }
+  
+  .header { 
+    grid-area: header; 
+    border: red solid 3px;
+}
+  .main { 
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: main; 
+    border: lime solid 3px;
+}
+  .footer { 
+    grid-area: footer; 
+    border: red solid 3px;
+}
+
+.time {
+    width: 56.0625rem;
+    height: 18.75rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 12.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.buttons {
+
+    width: 62.375rem;
+    height: 10.875rem;
+  
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for the first row */
+    gap: 20px;
+}
+
+.buttons > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #ffb7c5;
+    outline: 3px #ffb7c5 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    font-weight: bold;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    transition: 400ms;
+}
+
+.buttons button:hover{
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0);
+    color: #ffb7c5;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+  
+.buttons button:nth-child(5) {
+    grid-column: 2 / 4; /* Center the button in the middle of the 2nd row */
+    justify-self: center;
+  }
+
+.btns {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.3125rem;
+    height: 3.875rem;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+}
