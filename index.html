@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,36 +12,36 @@
             <!--EMPTY-->
         </div>
         <div class="main">
-            <div class="time">
+            <div id="time-display" class="time">
                 00:00:00
             </div>
             <section class="buttons">
 
-                <button>
+                <button id="set-timer-btn">
                     <div class="btns">
                     SET TIMER
                     </div>
                 </button>
 
-                <button>
+                <button id="start-btn">
                     <div class="btns">
                     START
                     </div>
                 </button>
                 
-                <button>
+                <button id="pause-btn">
                     <div class="btns">
                         PAUSE
                     </div>   
                 </button>
 
-                <button>
+                <button id="deduct-btn">
                     <div class="btns">
                         DEDUCT 5MINS
                     </div>
                 </button>
 
-                <button>
+                <button id="clear-btn">
                     <div class="btns">
                         CLEAR
                     </div>                    
@@ -52,5 +53,7 @@
             <!--EMPTY-->
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
